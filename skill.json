@@ -1,0 +1,35 @@
+{
+  "name": "genpark-conversational-candidate-screening-interview-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational candidate screening, automated voice interview agent & scoring matrix engine.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "candidate-screening",
+    "interview-agent",
+    "talent-scoring",
+    "conversational-ai",
+    "ph-august16"
+  ],
+  "inputs": {
+    "candidate_resume_text": {
+      "type": "string"
+    },
+    "job_requirements": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "competency_score_pct": {
+      "type": "number"
+    },
+    "interview_transcript_summary": {
+      "type": "string"
+    },
+    "recommendation": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
